@@ -1,8 +1,8 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.maviva.apppistolas" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.maviva.appnfc" version="1.0.0">
 
-	<name>Pistolas Maviva</name>
-	<description>Aplicacion Pistolas Maviva</description>
-	<author href="http://www.grupomaviva.es" email="informatica@grupomaviva.es">App Pistolas</author>
+	<name>Pruebas NFC</name>
+	<description>Aplicacion pruebas NFC</description>
+	<author href="http://www.grupomaviva.es" email="informatica@grupomaviva.es">App NFC</author>
 	<content src="index.html"/>
 
   <!-- Target Platforms -->
@@ -18,8 +18,8 @@
 	<gap:plugin name="cordova-plugin-dialogs" source="npm"/>
 	<gap:plugin name="cordova-plugin-device" source="npm"/>
 	<gap:plugin name="cordova-plugin-network-information" source="npm"/>
-	<gap:plugin name="phonegap-nfc" source="npm"/>
 	<gap:plugin name="cordova-plugin-whitelist" source="npm"/>
+	<gap:plugin name="phonegap-nfc" source="npm"/>
 <!-- OBSOLETO?
     <feature name="http://api.phonegap.com/1.0/device" />
 	<feature name="Notification"><param name="android-package" value="org.apache.cordova.dialogs.Notification" /></feature>	
