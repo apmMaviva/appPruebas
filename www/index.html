@@ -76,17 +76,11 @@
 			
 				numSerie = device.uuid;	
 				
-				setTimeout(LeerNFC, 10000);
+				nfc.addNdefListener(LecturaNfc, activadoNfcOk, activadoNfcFail);
 				
 			}
 			
 			
-// Activación del lector NFC
-			function LeerNFC() {
-
-				nfc.addNdefListener(LecturaNfc, activadoNfcOk, activadoNfcFail);
-
-			}
 
 			function LecturaNfc(nfcEvent) {
 
@@ -97,12 +91,8 @@
 	
 				var contenido = nfc.bytesToString(ndefMessage[0].payload).substring(1);
 				
-				if (contenido.substr(0,2)=='es' || contenido.substr(0,2)=='ES' || contenido.substr(0,2)=='en' || contenido.substr(0,2)=='EN') {
-					contenido = contenido.substr(2);
-				} 
+				alert('Leido NFC: ' + contenido);
 
-				setTimeout(LeerNFC, 6000);
-									
 			}
 			
 			function activadoNfcOk() {
