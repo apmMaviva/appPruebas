@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="com.grupomaviva.sincronos" version="1.0.0">
-  <name>Carros Síncronos</name>
-  <description>Made with Monaca (http://monaca.mobi)</description>
+<widget xmlns="http://www.w3.org/ns/widgets" id="com.grupomaviva.nfc" version="1.0.0">
+  <name>Pruebas NFC</name>
+  <description>Pruebas apertura automatica al leer NFC</description>
   <author/>
   <content src="index.html"/>
   <allow-navigation href="*"/>
