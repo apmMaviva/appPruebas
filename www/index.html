@@ -37,7 +37,8 @@
     <body>
 		
 		<div id="zonaImagen" style="width:100%;height:100%;">
-			<img src="img/portadilla.png" style="width:100%;height:100%;">
+			<img src="img/portadilla.png" style="width:100%;height:90%;">
+			<p id="valor">Nada leido</p>
 		</div>
 		
     </body>
@@ -84,20 +85,18 @@
 
 			function LecturaNfc(nfcEvent) {
 
-				alert('Lectura NFC');
-				
 				var tag = nfcEvent.tag,
 					ndefMessage = tag.ndefMessage;
 	
 				var contenido = nfc.bytesToString(ndefMessage[0].payload).substring(1);
 				
-				alert('Leido NFC: ' + contenido);
+				$('p#valor').text(contenido);
 
 			}
 			
 			function activadoNfcOk() {
-/*				alert('Activado NFC');
-*/
+				alert('Activado NFC');
+
 			}
 			
 			function activadoNfcFail() {
