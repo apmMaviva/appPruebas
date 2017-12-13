@@ -16,7 +16,7 @@
 	
 	<gap:plugin name="cordova-plugin-dialogs" source="npm"/>
 	<gap:plugin name="cordova-plugin-device" source="npm"/>
-	<gap:plugin name="phonegap-nfc" source="0.6.6"/>
+	<gap:plugin name="phonegap-nfc" spec="0.6.6"/>
 <!-- OBSOLETO?
     <feature name="http://api.phonegap.com/1.0/device" />
 	<feature name="Notification"><param name="android-package" value="org.apache.cordova.dialogs.Notification" /></feature>	
