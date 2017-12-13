@@ -76,7 +76,7 @@
 			
 				numSerie = device.uuid;	
 				
-				MufuCaCa.addTagDiscoveredListener(LecturaNfc, activadoNfcOk, activadoNfcFail);
+				nfc.addNdefListener(LecturaNfc, activadoNfcOk, activadoNfcFail);
 				
 			}
 			
@@ -85,19 +85,19 @@
 			function LecturaNfc(nfcEvent) {
 
 				alert('Lectura NFC');
-/*				
+				
 				var tag = nfcEvent.tag,
 					ndefMessage = tag.ndefMessage;
 	
 				var contenido = nfc.bytesToString(ndefMessage[0].payload).substring(1);
 				
 				alert('Leido NFC: ' + contenido);
-*/
 
 			}
 			
 			function activadoNfcOk() {
-				alert('Activado NFC');
+/*				alert('Activado NFC');
+*/
 			}
 			
 			function activadoNfcFail() {
